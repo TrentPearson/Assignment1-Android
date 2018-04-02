@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="Login_button">Login</string>
+    <string name="Quit_button">Quit</string>
+    <string name="Back_button">Back</string>
+    <string name="Adventure_button">Adventure</string>
+    <string name="Training_button">Training</string>
+    <string name="Adventure1">Adventure 1</string>
+    <string name="Adventure2">Adventure 2</string>
+    <string name="Adventure3">Adventure 3</string>
+    <string name="Adventure4">Adventure 4</string>
+    <string name="Adventure5">Adventure 5</string>
+    <string name="Text_user">Username</string>
+    <string name="Text_pass">Password</string>
+</resources>
