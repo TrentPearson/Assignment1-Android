@@ -19,7 +19,12 @@
         <activity android:name=".Home_screen" />
         <activity android:name=".Login" />
         <activity android:name=".Adventure" />
-        <activity android:name=".Training"></activity>
+        <activity android:name=".Training" />
+        <activity android:name=".Adventure1" />
+        <activity android:name=".Adventure2" />
+        <activity android:name=".Adventure3" />
+        <activity android:name=".Adventure4" />
+        <activity android:name=".Adventure5"></activity>
     </application>
 
 </manifest>
