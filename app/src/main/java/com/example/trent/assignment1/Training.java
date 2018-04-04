@@ -12,4 +12,10 @@ public class Training extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
     }
+
+    public void sendBack(View view)
+    {
+        Intent intent = new Intent (this, Home_screen.class);
+        startActivity(intent);
+    }
 }

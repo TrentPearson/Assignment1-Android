@@ -17,6 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Adventure2"
+        android:onClick="sendToAdventure2"
         app:layout_constraintBottom_toTopOf="@+id/Adventure3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -31,6 +32,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Adventure5"
+        android:onClick="sendToAdventure5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -45,6 +47,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Adventure4"
+        android:onClick="sendToAdventure4"
         app:layout_constraintBottom_toTopOf="@+id/Adventure5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -59,6 +62,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Adventure3"
+        android:onClick="sendToAdventure3"
         app:layout_constraintBottom_toTopOf="@+id/Adventure4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -74,6 +78,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/Adventure1"
+        android:onClick="sendToAdventure1"
         app:layout_constraintBottom_toTopOf="@+id/Adventure2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
