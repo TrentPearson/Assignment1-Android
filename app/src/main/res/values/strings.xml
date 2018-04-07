@@ -12,4 +12,5 @@
     <string name="Adventure5">Adventure 5</string>
     <string name="Text_user">Username</string>
     <string name="Text_pass">Password</string>
+    <string name="attackPhrase">Enemy has been attacked!</string>
 </resources>
