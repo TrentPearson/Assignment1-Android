@@ -7,6 +7,7 @@ import android.view.View;
 
 public class Adventure extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,12 @@ public class Adventure extends AppCompatActivity {
     {
         Intent intent = new Intent (this, Adventure2.class);
         startActivity(intent);
+    }
+
+    public void Adventure2Visible1()
+    {
+        Training adventure2Object = new Training();
+                adventure2Object.Adventure2Visible();
     }
 
     public void sendToAdventure3(View view)

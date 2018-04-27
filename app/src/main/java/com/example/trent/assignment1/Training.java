@@ -1,7 +1,8 @@
 package com.example.trent.assignment1;
 
-import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,13 +10,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
+import java.util.logging.Level;
+
 public class Training extends AppCompatActivity {
 
-Button btn;
+
+Button lvlIncrease;
 TextView level;
-private int Counter = 0;
-int CurrentNumber = 0;
-int MaxClicks = 5;
+int Counter = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -23,22 +26,36 @@ int MaxClicks = 5;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
 
-        btn = (Button) findViewById(R.id.levelup);
-        level = (TextView) findViewById(R.id.level);
+        lvlIncrease = findViewById(R.id.levelup);
+        level = findViewById(R.id.level);
 
-        btn.setOnClickListener(new View.OnClickListener()
+       //Load counter
+        SharedPreferences lvl = this.getSharedPreferences("myLvl", Context.MODE_PRIVATE);
+        Counter = lvl.getInt("Counter", 0);
+
+        level.setText(Integer.toString(Counter));
+
+        lvlIncrease.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
             if(Counter > 4)
             {
-                btn.setEnabled(false);
+                lvlIncrease.setEnabled(false);
             }
             else
             {
-                Counter++;
+                Counter += 1;
+
+                SharedPreferences Lvl = getSharedPreferences("myLvl", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = Lvl.edit();
+                editor.putInt("Counter", Counter);
+                editor.commit();
+
                 level.setText(Integer.toString(Counter));
+
+
             }
             }
         });
@@ -50,4 +67,23 @@ int MaxClicks = 5;
         Intent intent = new Intent (this, Home_screen.class);
         startActivity(intent);
     }
+
+    public void Adventure2Visible()
+    {
+
+
+        if (Counter < 3)
+        {
+            Button adventure2 = findViewById(R.id.Adventure2);
+            adventure2.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            Button adventure2 = findViewById(R.id.Adventure2);
+            adventure2.setVisibility(View.INVISIBLE);
+        }
+    }
 }
+
+
+
