@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import java.util.Scanner;
+
 
 public class Adventure extends AppCompatActivity
 {
 
-    Button Adventure1, Adventure2, Adventure3, Adventure4, Adventure5;
+   Button Adventure1, Adventure2, Adventure3, Adventure4, Adventure5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -19,8 +19,16 @@ public class Adventure extends AppCompatActivity
         setContentView(R.layout.activity_adventure);
 
 
-            Training counter = new Training();
-            counter.Adventure2Visible();
+        if(Training.Counter >= 2)
+        {
+            Button adventure2 = findViewById(R.id.Adventure2);
+            adventure2.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            Button adventure2 = findViewById(R.id.Adventure2);
+            adventure2.setVisibility(View.INVISIBLE);
+        }
 
     }
 

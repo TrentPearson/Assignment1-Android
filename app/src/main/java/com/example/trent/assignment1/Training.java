@@ -17,9 +17,9 @@ public class Training extends AppCompatActivity {
 
 Button lvlIncrease;
 Button lvlDecrease;
+Button adventure2;
 TextView level;
-int LEVEL = 0;
-int Counter = 0;
+static int Counter = 0;
 
 
     @Override
@@ -31,11 +31,14 @@ int Counter = 0;
         lvlIncrease = findViewById(R.id.levelup);
         level = findViewById(R.id.level);
 
-       //Load counter
+       //Load counter value.
         SharedPreferences lvl = this.getSharedPreferences("myLvl", Context.MODE_PRIVATE);
         Counter = lvl.getInt("Counter", 0);
 
         level.setText(Integer.toString(Counter));
+
+
+
 
         lvlIncrease.setOnClickListener(new View.OnClickListener()
         {
@@ -56,7 +59,6 @@ int Counter = 0;
                 editor.commit();
 
                 level.setText(Integer.toString(Counter));
-
 
             }
             }
@@ -82,6 +84,7 @@ int Counter = 0;
 
             }
         });
+
     }
 
     public void enable()
@@ -105,7 +108,7 @@ int Counter = 0;
         startActivity(intent);
     }
 
-    public void Adventure2Visible()
+  /*  public void Adventure2Visible()
     {
         if (Counter >= 2)
         {
@@ -117,7 +120,7 @@ int Counter = 0;
             Button adventure2 = findViewById(R.id.Adventure2);
             adventure2.setVisibility(View.INVISIBLE);
         }
-    }
+    }*/
 }
 
 
