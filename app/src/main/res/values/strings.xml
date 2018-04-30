@@ -5,6 +5,8 @@
     <string name="Back_button">Back</string>
     <string name="Adventure_button">Adventure</string>
     <string name="Training_button">Training</string>
+    <string name="LevelDown">Level Down</string>
+    <string name="LevelUp">Level Up</string>
     <string name="Adventure1">Adventure 1</string>
     <string name="Adventure2">Adventure 2</string>
     <string name="Adventure3">Adventure 3</string>

@@ -4,15 +4,26 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import java.util.Scanner;
 
-public class Adventure extends AppCompatActivity {
+public class Adventure extends AppCompatActivity
+{
 
+    Button Adventure1, Adventure2, Adventure3, Adventure4, Adventure5;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure);
+
+
+            Training counter = new Training();
+            counter.Adventure2Visible();
+
     }
+
 
     public void sendBack(View view)
     {
@@ -30,12 +41,6 @@ public class Adventure extends AppCompatActivity {
     {
         Intent intent = new Intent (this, Adventure2.class);
         startActivity(intent);
-    }
-
-    public void Adventure2Visible1()
-    {
-        Training adventure2Object = new Training();
-                adventure2Object.Adventure2Visible();
     }
 
     public void sendToAdventure3(View view)
