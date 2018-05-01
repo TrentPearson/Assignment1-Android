@@ -30,6 +30,39 @@ public class Adventure extends AppCompatActivity
             adventure2.setVisibility(View.INVISIBLE);
         }
 
+        if(Training.Counter >= 3)
+        {
+            Button adventure3 = findViewById(R.id.Adventure3);
+            adventure3.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            Button adventure3 = findViewById(R.id.Adventure3);
+            adventure3.setVisibility(View.INVISIBLE);
+        }
+
+        if(Training.Counter >= 4)
+        {
+            Button adventure4 = findViewById(R.id.Adventure4);
+            adventure4.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            Button adventure4 = findViewById(R.id.Adventure4);
+            adventure4.setVisibility(View.INVISIBLE);
+        }
+
+        if(Training.Counter >= 5)
+        {
+            Button adventure5 = findViewById(R.id.Adventure5);
+            adventure5.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            Button adventure5 = findViewById(R.id.Adventure5);
+            adventure5.setVisibility(View.INVISIBLE);
+        }
+
     }
 
 
