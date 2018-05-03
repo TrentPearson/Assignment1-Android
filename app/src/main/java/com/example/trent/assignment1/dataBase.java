@@ -1,84 +1,35 @@
 package com.example.trent.assignment1;
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Button;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
-public class dataBase extends SQLiteOpenHelper
+
+class DATABASE extends SQLiteOpenHelper
 {
+    static String DATABASE_NAME = "UserDataBase";
+    public static final String TABLE_NAME = "UserTable";
+    public static final String Table_Column_ID = "id";
+    public static final String Table_Column_1_User = "user";
+    public static final String Table_Column_2_Password = "password";
 
-    private static final String DATABASE_NAME = "DB";
-    private static final int DATABASE_VERSION = 1;
-    private final Context context;
-    SQLiteDatabase db;
-
-    private static final String DATABASE_PATH = "/data/data/com.example.trent.assignment1/databases/";
-
-    public dataBase(Context context )
+    public DATABASE (Context context)
     {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
-        createDb();
+        super (context, DATABASE_NAME, null, 1);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db)
+    public void onCreate(SQLiteDatabase database)
     {
-        db.execSQL("Create table user(username text, password text)");
+        String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS "+TABLE_NAME+" ("+Table_Column_1_User+" VARCHAR, "+Table_Column_2_Password+" VARCHAR)";
+        database.execSQL(CREATE_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1)
     {
-
-    }
-
-    public void createDb()
-    {
-        boolean dbExists = checkDbExists();
-
-        if(dbExists)
-        {
-            this.getReadableDatabase();
-            copyDatabase();
-        }
-    }
-
-    private boolean checkDbExists()
-    {
-        SQLiteDatabase sqLiteDatabase = null;
-
-        String path = DATABASE_PATH + DATABASE_NAME;
-        sqLiteDatabase = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
-
-        if(sqLiteDatabase != null)
-        {
-            sqLiteDatabase.close();
-            return true;
-        }
-        return  false;
-    }
-
-    private void copyDatabase()
-    {
-        try
-        {
-            InputStream inputStream = context.getAssets().open(DATABASE_NAME);
-
-            String outFileName =DATABASE_PATH + DATABASE_NAME;
-
-            OutputStream outputStream = new FileOutputStream(outFileName);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
+        onCreate(db);
     }
 }

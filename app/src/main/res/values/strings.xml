@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Assignment1</string>
     <string name="Login_button">Login</string>
+    <string name="Register_button">Register</string>
     <string name="Quit_button">Quit</string>
     <string name="Back_button">Back</string>
     <string name="Adventure_button">Adventure</string>

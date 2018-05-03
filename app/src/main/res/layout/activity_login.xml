@@ -17,7 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_pass"
+        app:layout_constraintBottom_toTopOf="@+id/text_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/title" />
 
     <EditText
-        android:id="@+id/text_pass"
+        android:id="@+id/text_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.423" />
 
     <EditText
-        android:id="@+id/text_username"
+        android:id="@+id/text_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -70,7 +70,7 @@
         android:textStyle="bold"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/text_pass"
+        app:layout_constraintEnd_toStartOf="@+id/text_username"
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -88,10 +88,10 @@
         android:textStyle="bold"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/text_username"
+        app:layout_constraintEnd_toStartOf="@+id/text_pass"
         app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pass"
+        app:layout_constraintTop_toBottomOf="@+id/text_username"
         app:layout_constraintVertical_bias="0.113" />
 
     <Button
@@ -102,13 +102,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="96dp"
         android:layout_marginTop="8dp"
-        android:text="Login"
+        android:text="@string/Login_button"
         android:onClick="sendToHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Register"
         app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_pass"
         app:layout_constraintVertical_bias="0.089" />
 
     <Button
@@ -118,9 +118,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="76dp"
         android:layout_marginTop="8dp"
-        android:text="Register"
+        android:text="@string/Register_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_pass"
         app:layout_constraintVertical_bias="0.089" />
 </android.support.constraint.ConstraintLayout>
