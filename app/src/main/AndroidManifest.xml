@@ -26,7 +26,8 @@
         <activity android:name=".Adventure3" />
         <activity android:name=".Adventure4" />
         <activity android:name=".Adventure5" />
-        <activity android:name=".register"></activity>
+        <activity android:name=".register" />
+        <activity android:name=".FinalAdventure"></activity>
     </application>
 
 </manifest>

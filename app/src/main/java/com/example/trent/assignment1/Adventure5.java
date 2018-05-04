@@ -36,7 +36,7 @@ public class Adventure5 extends AppCompatActivity {
 
     public void sendBack5(View view)
     {
-        Intent intent = new Intent (this, Adventure.class);
+        Intent intent = new Intent (this, FinalAdventure.class);
         startActivity(intent);
     }
 }
