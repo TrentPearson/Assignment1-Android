@@ -13,14 +13,14 @@ import org.w3c.dom.Text;
 
 public class Adventure1 extends AppCompatActivity
 {
-    TextView attackPhrase;
+    TextView attackPhrase, intro;
     Button winner1;
     Button Adventure2;
 
-
+//Send the user to "ItemDrop1" screen.
     public void sendBack2(View view)
     {
-        Intent intent = new Intent (this, Adventure.class);
+        Intent intent = new Intent (this, ItemDrop1.class);
         startActivity(intent);
     }
 
@@ -30,6 +30,7 @@ public class Adventure1 extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure1);
 
+        //When "showButton" is pressed:
         Button showButton = findViewById(R.id.btnAttack1);
         showButton.setOnClickListener(new View.OnClickListener()
 
@@ -37,11 +38,17 @@ public class Adventure1 extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //textview becomes visible.
                 TextView attackPhrase = findViewById(R.id.attackPhrase);
                 attackPhrase.setVisibility(View.VISIBLE);
 
+                //textview becomes visible.
                 Button winner1 = findViewById(R.id.winner1);
                 winner1.setVisibility(View.VISIBLE);
+
+                //textview become invisible.
+                intro = findViewById(R.id.Intro);
+                intro.setVisibility(View.INVISIBLE);
             }
         });
     }

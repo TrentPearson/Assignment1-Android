@@ -18,6 +18,7 @@ public class Adventure5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure5);
 
+        //When "showButton" is pressed:
         Button showButton = findViewById(R.id.btnAttack5);
         showButton.setOnClickListener(new View.OnClickListener()
 
@@ -25,6 +26,7 @@ public class Adventure5 extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+                //textviews becomes visible.
                 TextView attackPhrase = findViewById(R.id.attackPhrase5);
                 attackPhrase.setVisibility(View.VISIBLE);
 
@@ -34,6 +36,7 @@ public class Adventure5 extends AppCompatActivity {
         });
     }
 
+    //When the function is called, sends user to "FinalAdventure" screen.
     public void sendBack5(View view)
     {
         Intent intent = new Intent (this, FinalAdventure.class);

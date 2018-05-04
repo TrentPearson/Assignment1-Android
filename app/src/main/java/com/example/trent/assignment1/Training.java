@@ -19,7 +19,7 @@ Button lvlIncrease;
 Button lvlDecrease;
 Button adventure2;
 TextView level;
-static int Counter = 0;
+static int Counter = 1;
 
 
     @Override
@@ -35,11 +35,12 @@ static int Counter = 0;
         SharedPreferences lvl = this.getSharedPreferences("myLvl", Context.MODE_PRIVATE);
         Counter = lvl.getInt("Counter", 0);
 
+        //shows counter value.
         level.setText(Integer.toString(Counter));
 
 
 
-
+        //checks counter value to see if is greater than 4, if it is, the "lvlIncrease" button will become unusable.
         lvlIncrease.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -49,6 +50,7 @@ static int Counter = 0;
             {
                 lvlIncrease.setEnabled(false);
             }
+            //is it is not greater than 4, then the button will add +1 to the counter, save it, then show the new counter value.
             else
             {
                 Counter += 1;
@@ -64,8 +66,8 @@ static int Counter = 0;
             }
         });
 
+        //decreases the counter by -1, and also checks the "enable" function too. new value is then saved, and shown to user.
         lvlDecrease = findViewById(R.id.levelDown);
-
         lvlDecrease.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -87,6 +89,7 @@ static int Counter = 0;
 
     }
 
+    //the button starts off as 'true', though if the value of "counter" becomes 0, then the button will become unusable.
     public void enable()
     {
         lvlDecrease.setEnabled(true);
@@ -102,25 +105,12 @@ static int Counter = 0;
     }
 
 
+    //sends the user to "Home" screen.
     public void sendBack(View view)
     {
         Intent intent = new Intent (this, Home_screen.class);
         startActivity(intent);
     }
-
-  /*  public void Adventure2Visible()
-    {
-        if (Counter >= 2)
-        {
-            Button adventure2 = findViewById(R.id.Adventure2);
-            adventure2.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            Button adventure2 = findViewById(R.id.Adventure2);
-            adventure2.setVisibility(View.INVISIBLE);
-        }
-    }*/
 }
 
 

@@ -27,7 +27,13 @@
         <activity android:name=".Adventure4" />
         <activity android:name=".Adventure5" />
         <activity android:name=".register" />
-        <activity android:name=".FinalAdventure"></activity>
+        <activity android:name=".FinalAdventure" />
+        <activity android:name=".endGame" />
+        <activity android:name=".ItemDrop1" />
+        <activity android:name=".ItemDrop2" />
+        <activity android:name=".ItemDrop3" />
+        <activity android:name=".ItemDrop4" />
+        <activity android:name=".Introduction"></activity>
     </application>
 
 </manifest>

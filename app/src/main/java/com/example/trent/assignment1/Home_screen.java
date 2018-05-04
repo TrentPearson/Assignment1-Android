@@ -17,12 +17,14 @@ public class Home_screen extends AppCompatActivity
 
     public void sendToAdventure(View view)
     {
+        //sends user to "Adventure" screen.
         Intent intent = new Intent (this, Adventure.class);
         startActivity(intent);
     }
 
     public void sendToTraining(View view)
     {
+        //sends user to "Training" screen.
         Intent intent = new Intent (this, Training.class);
         startActivity(intent);
     }

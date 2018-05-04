@@ -18,6 +18,7 @@ public class Adventure2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure2);
 
+        //When "showButton" is pressed:
         Button showButton = findViewById(R.id.btnAttack1);
         showButton.setOnClickListener(new View.OnClickListener()
 
@@ -28,15 +29,17 @@ public class Adventure2 extends AppCompatActivity {
                 TextView attackPhrase = findViewById(R.id.attackPhrase2);
                 attackPhrase.setVisibility(View.VISIBLE);
 
+                //textview becomes visible.
                 Button winner2 = findViewById(R.id.winner2);
                 winner2.setVisibility(View.VISIBLE);
             }
         });
     }
 
+    //When the function is called, sends user to "ItemDrop2" screen.
     public void sendBack3(View view)
     {
-        Intent intent = new Intent (this, Adventure.class);
+        Intent intent = new Intent (this, ItemDrop2.class);
         startActivity(intent);
     }
 }

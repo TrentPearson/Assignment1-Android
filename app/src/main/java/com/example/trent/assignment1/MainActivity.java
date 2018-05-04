@@ -13,12 +13,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //sends user to "Login" screen.
     public void sendToLogin(View view)
     {
         Intent intent = new Intent (this, Login.class);
         startActivity(intent);
     }
 
+    //quites the application.
     public void sendToQuit(View view)
     {
         finish();

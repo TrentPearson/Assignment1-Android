@@ -17,7 +17,7 @@ import android.text.TextUtils;
 public class Login extends AppCompatActivity
 {
 
-
+//All variables.
 Button login, register;
 EditText text_user, text_pass;
 String UserHolder, PassHolder;
@@ -35,6 +35,7 @@ public static final String User = "";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Find the variables via their id names.
         login = findViewById(R.id.login2);
         register = findViewById(R.id.Register);
 
@@ -43,6 +44,7 @@ public static final String User = "";
 
         sqLiteHelper = new DATABASE(this);
 
+        //when "login" button is pressed, these functions are activated.
         login.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -53,6 +55,7 @@ public static final String User = "";
             }
         });
 
+        //When "register" button is pressed, user is sent to "register" screen.
         register.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -106,7 +109,7 @@ public static final String User = "";
     {
         if(TempPassword.equalsIgnoreCase(PassHolder))
         {
-            Intent intent = new Intent(Login.this, Home_screen.class);
+            Intent intent = new Intent(Login.this, Introduction.class);
             startActivity(intent);
         }
     }
@@ -116,7 +119,7 @@ public static final String User = "";
 
     public void sendToHome(View view)
     {
-        Intent intent = new Intent (this, Home_screen.class);
+        Intent intent = new Intent (this, Introduction.class);
         startActivity(intent);
     }
 }

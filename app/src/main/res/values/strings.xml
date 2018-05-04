@@ -16,9 +16,24 @@
     <string name="Text_user">Username</string>
     <string name="Text_pass">Password</string>
     <string name="Next">Next</string>
+    <string name="Finish">Finished</string>
+    <string name="endGame">End Game</string>
+    <string name="sword">A Sword</string>
+    <string name="armor">Armor</string>
+    <string name="gloves">Gloves</string>
+    <string name="boots">Boots</string>
+    <string name="lvlup">LEVEL UP</string>
+    <string name="description">You found an item. Go to "Training" and level up +1 for the next adventure.</string>
+    <string name="ItemDrop">An Item Has Dropped!</string>
     <string name="attackPhrase">Enemy has been attacked!</string>
     <string name="motherPhrase1">You found me!</string>
     <string name="motherPhrase2">I was starting to get worried.</string>
     <string name="motherPhrase3">Let us go home!</string>
+    <string name="intro">To attack an enemy, tap on your character at the bottom of the screen.</string>
+    <string name="start1">They took her! They took my mother!</string>
+    <string name="start2">I need to go and find her. She is the only family I have left!</string>
+    <string name="start3">Tap on the "Adventure" icon so we can start!</string>
+
+
 
 </resources>
