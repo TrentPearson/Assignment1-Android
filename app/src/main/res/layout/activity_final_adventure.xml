@@ -34,7 +34,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/attackPhrase"
+        android:text="@string/motherPhrase3"
         android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -43,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintVertical_bias="0.664" />
 
     <TextView
         android:id="@+id/motherMessage1"
@@ -55,7 +55,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/attackPhrase"
+        android:text="@string/motherPhrase1"
         android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -64,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/motherMessage2"
@@ -76,15 +76,35 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/attackPhrase"
+        android:text="@string/motherPhrase2"
         android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.328" />
+
+    <Button
+        android:id="@+id/next"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motherMessage3"
+        app:layout_constraintVertical_bias="0.913" />
 
 </android.support.constraint.ConstraintLayout>
