@@ -1,0 +1,46 @@
+Item Name: gloves
+License Type: MIT
+Author: Guild Wars
+Source Website: https://wiki.guildwars.com/images/3/38/Warrior_Elite_Platemail_armor_m.jpg
+
+
+Item Name: Boots
+License Type: MIT
+Author: Guild Wars
+Source Website: https://wiki.guildwars.com/images/3/38/Warrior_Elite_Platemail_armor_m.jpg
+
+
+Item Name: armor
+License Type: MIT
+Author: Wazene
+Source Website: https://www.wazene.com/anime-store/top-dbz-vegeta-3d-t-shirt-long-sleeve/
+
+
+Item Name: mother_background
+License Type: MIT
+Author: Fandom
+Source Website: http://community.wikia.com/wiki/File:Fantasy-forest-hd-mobile-wallpaper.jpg
+
+
+Item Name: home_screen
+License Type: MIT
+Author: Fandom
+Source Website: http://fr.fairy-tail.wikia.com/wiki/Freesia
+
+
+Item Name: adventure_screen
+License Type: MIT
+Author: matome
+Source Website: https://matome.naver.jp/odai/2148599944312521101/2148652047720501803
+
+
+Item Name: main_screen
+License Type: MIT
+Author: Fandom
+Source Website: http://fairy-tail-oc-rpc.wikia.com/wiki/Edolas
+
+
+Item Name: sword
+License Type:
+Author: fanpop
+Source Website: http://www.fanpop.com/clubs/anime-creators/images/30989149/title/ockanresor-sword-truth-photo
